@@ -1,10 +1,10 @@
 import React from "react";
-import TodoList from "./components/todo-list/todo-list.component";
+import NameList from "./components/name-list/name-list.component";
 import SearchBar from "./components/search-bar/search-bar.component";
 
 const App = () => (
   <div>
-    <TodoList />
+    <NameList />
     <SearchBar />
   </div>
 );

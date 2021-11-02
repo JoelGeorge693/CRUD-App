@@ -1,4 +1,4 @@
-.tasks {
+.names {
   padding-top: 5px;
   padding-left: 5px;
   border-radius: 10px;
@@ -12,22 +12,10 @@
 
   .icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 3px;
     padding-left: 320px;
     cursor: pointer;
     position: fixed;
-
-    &:hover {
-      transition: all 0.2s ease-in-out;
-    }
-
-    .cancel-icon-pending {
-      display: none;
-    }
   }
-}
-
-#completed {
-  text-decoration: line-through;
 }

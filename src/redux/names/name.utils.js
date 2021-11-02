@@ -1,15 +1,15 @@
-export const addTasksToArray = (taskArray, taskToAdd) => {
-  taskArray.push(taskToAdd);
-  return [...taskArray];
+export const addNamesToArray = (nameArray, nameToAdd) => {
+  nameArray.push(nameToAdd);
+  return [...nameArray];
 };
 
-export const removeTasksFromArray = (taskArray, key) => {
-  return taskArray.filter((task, index) => index !== key);
-  // const index = taskArray.indexOf(taskToRemove);
+export const removeNamesFromArray = (nameArray, key) => {
+  return nameArray.filter((name, index) => index !== key);
+  // const index = nameArray.indexOf(nameToRemove);
   // if (index > -1) {
-  //   taskArray.splice(index, 1);
+  //   nameArray.splice(index, 1);
   // }
-  // return taskArray;
+  // return nameArray;
 };
 
 const myDiff = (date1, interval) => {

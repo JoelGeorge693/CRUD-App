@@ -1,15 +1,15 @@
 import { combineReducers } from "redux";
-import TaskReducer from "../redux/tasks/tasks.reducer";
+import NameReducer from "../redux/names/name.reducer";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["taskList"],
+  whitelist: ["nameList"],
 };
 const rootReducer = combineReducers({
-  taskList: TaskReducer,
+  nameList: NameReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);
